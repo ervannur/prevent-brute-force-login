@@ -1,0 +1,142 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Prevent Brute Force Login\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-02-19 09:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#. Name of the plugin
+#: prevent-brute-force-login.php:51 includes/admin/settings.php:47
+msgid "Prevent Brute Force Login"
+msgstr ""
+
+#: prevent-brute-force-login.php:71
+msgid "[{site_url}] Site Lockout Notification"
+msgstr ""
+
+#: prevent-brute-force-login.php:72
+msgid ""
+"<strong style='color: #ee782e;'>IP Range:</strong> {ip_range}.* \n"
+msgstr ""
+
+#: prevent-brute-force-login.php:76
+msgid "[{site_url}] Unlock Request Notification"
+msgstr ""
+
+#: prevent-brute-force-login.php:77
+msgid ""
+"After clicking the above link you will be able to login to the WordPress "
+"administration panel."
+msgstr ""
+
+#: includes/lockdown.php:75
+msgid "<strong>ERROR</strong>: Invalid login credentials."
+msgstr ""
+
+#: includes/lockdown.php:76
+#, php-format
+msgid "%d attempts remaining"
+msgstr ""
+
+#: includes/lockdown.php:235
+msgid ""
+"Error! The URL value is empty. Please specify a correct URL value to "
+"redirect to!"
+msgstr ""
+
+#: includes/admin/settings.php:27 includes/admin/settings.php:28
+msgid "Prevent Brute Force"
+msgstr ""
+
+#: includes/admin/settings.php:52
+msgid "Settings"
+msgstr ""
+
+#: includes/admin/settings.php:53
+msgid "Admin Notification"
+msgstr ""
+
+#: includes/admin/settings.php:54
+msgid "Unlock Request"
+msgstr ""
+
+#: includes/admin/settings.php:109
+msgid "Enable Plugin"
+msgstr ""
+
+#: includes/admin/settings.php:117
+msgid "Max login attempts"
+msgstr ""
+
+#: includes/admin/settings.php:125 includes/admin/settings.php:133
+msgid "Retry max period"
+msgstr ""
+
+#: includes/admin/settings.php:146
+msgid "Admin Email"
+msgstr ""
+
+#: includes/admin/settings.php:153 includes/admin/settings.php:181
+msgid "Subject"
+msgstr ""
+
+#: includes/admin/settings.php:161 includes/admin/settings.php:189
+msgid "Body"
+msgstr ""
+
+#: includes/admin/settings.php:174
+msgid "Unlock Request Emails"
+msgstr ""
+
+#: includes/forms/unlock-request.php:25
+msgid "Please enter a valid email address"
+msgstr ""
+
+#: includes/forms/unlock-request.php:37
+msgid "User account not found!"
+msgstr ""
+
+#: includes/forms/unlock-request.php:56
+msgid "Error: No locked entry was found in the DB with your IP address range!"
+msgstr ""
+
+#: includes/forms/unlock-request.php:62
+msgid "An email has been sent to you with the unlock instructions."
+msgstr ""
+
+#: includes/forms/unlock-request.php:87
+msgid ""
+"You are here because you have been locked out due to too many incorrect "
+"login attempts."
+msgstr ""
+
+#: includes/forms/unlock-request.php:88
+msgid ""
+"Please enter your email address and you will receive an email with "
+"instructions on how to unlock yourself."
+msgstr ""
+
+#: includes/forms/unlock-request.php:93
+msgid "Email Address"
+msgstr ""
+
+#: includes/forms/unlock-request.php:98
+msgid "Send Unlock Request"
+msgstr ""
+
+#. Description of the plugin
+msgid "Prevent site from brute force by limit failed login attempts"
+msgstr ""
+
+#. Author of the plugin
+msgid "Ervan Adhitiya"
+msgstr ""

@@ -1,0 +1,7 @@
+{
+    "require-dev": {
+        "wp-coding-standards/wpcs": "*",
+        "dealerdirect/phpcodesniffer-composer-installer": "*",
+        "phpcompatibility/phpcompatibility-wp": "*"
+    }
+}
