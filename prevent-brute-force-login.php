@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Prevent Brute Force Login
  * Description: Prevent site from brute force by limit failed login attempts
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Ervan Adhitiya
  * Text Domain: prevent-brute-force-login
  * Domain Path: /languages
