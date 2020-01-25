@@ -51,7 +51,7 @@ require ABSPATH . '/wp-load.php';
 					if ( empty( $ip_range ) ) {
 						$unlock_url = false;
 					} else {
-						$unlock_url = kdbm_pbfl_notification::generate_unlock_request_link( $ip_range );
+						$unlock_url = Kdbm_Pbfl_Notification::generate_unlock_request_link( $ip_range );
 					}
 
 					if ( ! $unlock_url ) {
@@ -60,7 +60,7 @@ require ABSPATH . '/wp-load.php';
 						echo '<div id="login_error">' . $error_msg . '</div>';
 					} else {
 						// Send an email to the user.
-						kdbm_pbfl_notification::send_unlock_request_email( $email, $unlock_url );
+						Kdbm_Pbfl_Notification::send_unlock_request_email( $email, $unlock_url );
 						echo '<p class="message">' . __( 'An email has been sent to you with the unlock instructions.', 'prevent-brute-force-login' ) . '</p>';
 					}
 				}

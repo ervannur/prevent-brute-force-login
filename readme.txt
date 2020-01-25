@@ -2,7 +2,7 @@
 Contributors: ervannur
 Tags: login, brute force, prevent brute force, prevent brute force login, lockout, lockdown
 Requires at least: 4.9
-Tested up to: 4.9
+Tested up to: 5.3.2
 Stable tag: trunk
 Requires PHP: 5.6.3
 License: GPLv2 or later
@@ -37,5 +37,13 @@ Features
 
 == Changelog ==
 
-= 1.0 =
+1.1.0
+* Fix fatal error when unlock lockdown.
+* Able to lockdown localhost for testing.
+* Fix some fatal errors.
+
+1.0.1
+* Fix code standard.
+
+1.0.0
 * Initial Release.

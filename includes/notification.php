@@ -129,7 +129,7 @@ class Kdbm_Pbfl_Notification {
 	 * @return string unlock link.
 	 */
 	public static function generate_unlock_request_link( $ip_range ) {
-		$locked_user = kdbm_pbfl_lockdown::current_locked_user();
+		$locked_user = Kdbm_Pbfl_Lockdown::current_locked_user();
 		if ( isset( $locked_user->unlock_key ) && ! empty( $locked_user->unlock_key ) ) {
 			$secret_rand_key = $locked_user->unlock_key;
 		} else {

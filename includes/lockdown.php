@@ -201,7 +201,7 @@ class Kdbm_Pbfl_Lockdown {
 		}
 
 		if ( $result ) {
-			kdbm_pbfl_notification::send_ip_lock_notification_email( $username, $ip_range, $ip );
+			Kdbm_Pbfl_Notification::send_ip_lock_notification_email( $username, $ip_range, $ip );
 		}
 	}
 

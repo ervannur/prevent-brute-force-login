@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Prevent Brute Force Login
  * Description: Prevent site from brute force by limit failed login attempts
- * Version: 1.0.1
+ * Version: 1.1.0
  * Author: Ervan Adhitiya
  * Text Domain: prevent-brute-force-login
  * Domain Path: /languages
@@ -355,7 +355,7 @@ function kdbm_pbfl() {
 
 	if ( ! isset( $kdbm_pbfl ) ) {
 
-		$kdbm_pbfl = new kdbm_pbfl();
+		$kdbm_pbfl = new Kdbm_Pbfl();
 
 		$kdbm_pbfl->initialize();
 
