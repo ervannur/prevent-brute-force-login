@@ -84,7 +84,7 @@ class Kdbm_Pbfl_Lockdown {
 		}
 
 		$errors = new \WP_Error( 'authentication_failed', __( '<strong>ERROR</strong>: Invalid login credentials.', 'prevent-brute-force-login' ) );
-		$errors->add( 'remaining_attempts', sprintf( esc_html_( '%d attempts remaining', 'prevent-brute-force-login' ), $remaining_attempts ) );
+		$errors->add( 'remaining_attempts', sprintf( esc_html__( '%d attempts remaining', 'prevent-brute-force-login' ), $remaining_attempts ) );
 
 		return $errors;
 	}
@@ -240,7 +240,7 @@ class Kdbm_Pbfl_Lockdown {
 		}
 
 		// If URL contains unlock key in query param then process the request.
-		$unlock_key = wp_stripe_all_tags( sanitize_text_field( wp_unslash( $_GET['auth_key'] ) ) );
+		$unlock_key = wp_strip_all_tags( sanitize_text_field( wp_unslash( $_GET['auth_key'] ) ) );
 
 		global $wpdb;
 		$lockdowns_table_name = kdbm_pbfl_get_setting( 'db_lockdowns' );

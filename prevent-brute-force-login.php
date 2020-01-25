@@ -96,12 +96,12 @@ class Kdbm_Pbfl {
 			// Emails.
 			'admin_email_subject'  => __( '[{site_url}] Site Lockout Notification', 'prevent-brute-force-login' ),
 			'admin_email_body'     => __(
-				'A lockdown event has occurred due to too many failed login attempts. \n\n<strong style="color: #ee782e;">Username:</strong> {username} \n<strong style="color: #ee782e;">IP Address:</strong> {ip} \n<strong style="color: #ee782e;">IP Range:</strong> {ip_range}.* \n',
+				'A lockdown event has occurred due to too many failed login attempts. <br><br><strong style="color: #ee782e;">Username:</strong> {username} <br><strong style="color: #ee782e;">IP Address:</strong> {ip} <br><strong style="color: #ee782e;">IP Range:</strong> {ip_range}.* <br>',
 				'prevent-brute-force-login'
 			),
 			'unlock_email_subject' => __( '[{site_url}] Unlock Request Notification', 'prevent-brute-force-login' ),
 			'unlock_email_body'    => __(
-				'You have requested for the account with email address {email} to be unlocked. Please click the link below to unlock your account:\n\n<strong style="color: #ee782e;">Unlock link:</strong> {unlock_link}\n\nAfter clicking the above link you will be able to login to the WordPress administration panel.',
+				'You have requested for the account with email address {email} to be unlocked. Please click the link below to unlock your account:<br><br><strong style="color: #ee782e;">Unlock link:</strong> {unlock_link}<br><br>After clicking the above link you will be able to login to the WordPress administration panel.',
 				'prevent-brute-force-login'
 			),
 		);
@@ -269,6 +269,9 @@ class Kdbm_Pbfl {
 
 		if ( $valid_ip ) {
 			$ip_type = \WP_Http::is_ip_address( $ip ); // returns 4 or 6 if ipv4 or ipv6 or false if invalid.
+			if ( '::1' === $valid_ip ) {
+				return $valid_ip;
+			}
 			if ( 6 === $ip_type || false === $ip_type ) {
 				return ''; // for now return empty if ipv6 or invalid IP.
 			}

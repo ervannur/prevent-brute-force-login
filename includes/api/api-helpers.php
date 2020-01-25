@@ -66,13 +66,6 @@ function kdbm_pbfl_get_user_ip() {
  * Kdbm_pbfl_get_ip_range
  *
  * @since 1.0.0
- * @return string ip range
- */
-
-/**
- * Kdbm_pbfl_get_ip_range
- *
- * @since 1.0.0
  * @param  string $ip IP Address.
  * @return string     IP Range.
  */
